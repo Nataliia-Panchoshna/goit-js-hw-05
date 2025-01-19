@@ -1,6 +1,6 @@
 // Стрілочна функція для сортування користувачів за кількістю друзів
 const sortByDescendingFriendCount = (users) =>
-  [...users].sort((a, b) => b.friends.length - a.friends.length);
+  [...users].toSorted((a, b) => b.friends.length - a.friends.length);
 
 // Код для перевірки
 console.log(
